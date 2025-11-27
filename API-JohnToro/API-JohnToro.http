@@ -1,0 +1,6 @@
+@API_JohnToro_HostAddress = http://localhost:5230
+
+GET {{API_JohnToro_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

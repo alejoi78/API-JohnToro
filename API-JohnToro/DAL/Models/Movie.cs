@@ -9,6 +9,9 @@ namespace API_JohnToro.DAL.Models
         public string Name { get; set; }
         public int Duration { get; set; }
         public string Description { get; set; }
+
+        [Required]
+        [Display(Name = "Clasificacion de la pelicula")]
         public string Clasification { get; set; }
     }
 }

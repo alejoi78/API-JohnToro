@@ -16,6 +16,9 @@ namespace API_JohnToro.DAL.Models.Dtos
 
         public int Duration { get; set; }
         public string Description { get; set; }
+
+        [Required(ErrorMessage = "La clasificacion de la pelicula es obligatoria.")]
+        [MaxLength(10, ErrorMessage = "El número máximo de caracteres es de 10.")]
         public string Clasification { get; set; }
     }
 }

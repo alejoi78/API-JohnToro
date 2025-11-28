@@ -68,7 +68,7 @@ namespace API_JohnToro.Repository
             category.ModifiedDate = DateTime.UtcNow;
             _context.Categories.Update(category);
             return await SaveAsync();
-        }
+        }   
 
         private async Task<bool> SaveAsync()
         {

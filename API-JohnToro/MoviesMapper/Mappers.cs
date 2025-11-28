@@ -11,6 +11,8 @@ namespace API_JohnToro.MoviesMapper
         {
             CreateMap<Category, CategoryDto>().ReverseMap();
             CreateMap<Category, CategoryCreateUpdateDto>().ReverseMap();
+            CreateMap<Category, MovieDto>().ReverseMap();
+            CreateMap<Category, MovieCreateUpdateDto>().ReverseMap();
         }
     }
 }

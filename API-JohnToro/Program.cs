@@ -15,6 +15,7 @@ builder.Services.AddAutoMapper(cfg => cfg.AddProfile<Mappers>());
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 
 
 builder.Services.AddControllers();
